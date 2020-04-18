@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         taskThirdButton.setOnClickListener((l) -> {
             progressBar.setVisibility(View.VISIBLE);
-            taskThird.setVisibility(View.INVISIBLE);
             Thread thread1 = new Thread(new DownloadImage());
             Thread thread2 = new Thread(new LoginTask());
             thread1.start();
